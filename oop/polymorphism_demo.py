@@ -5,7 +5,7 @@ class Shape:
         raise NotImplementedError("Subclasses must override the area() method")
 
 class Rectangle(Shape):
-    def _init_(self, length, width):
+    def __init__ (self, length, width):
         self.length = length
         self.width = width
 
@@ -13,7 +13,7 @@ class Rectangle(Shape):
         return self.length * self.width
 
 class Circle(Shape):
-    def _init_(self, radius):
+    def __init__ (self, radius):
         self.radius = radius
 
     def area(self):
